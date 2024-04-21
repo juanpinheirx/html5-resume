@@ -1,0 +1,130 @@
+/* Normalize Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove Default Margins and Padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dt,
+dd,
+hr,
+fieldset,
+form,
+legend,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+th,
+td,
+pre,
+code,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/* Address User Agent Styles */
+body {
+  font-family: 'fira code';
+  font-size: 1rem; /* 16px by default */
+  line-height: 1.5;
+  /* color: #f8f8f2; Draculo - Foreground */
+  /* background-color: #282a36; Draculo - Background */
+}
+
+.body2 {
+  text-align: justify;
+  text-wrap: balance;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  /* color: #bd93f9; Draculo - Primary */
+  text-align: center;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links */
+a {
+  /* color: #8be9bd; Draculo - Accent */
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #50fa7b; /* Draculo - Success */
+}
+
+/* Images */
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 1.2rem; /* 19.2px */
+  }
+  #resumecontainer,
+  #body_popup {
+    max-width: 100%;
+  }
+}
+
+/* Specific Styles */
+#resumecontainer {
+  padding: 20px;
+  margin: 20px auto;
+  min-width: 300px;
+  /* background-color: #282a36; Draculo - Background */
+  text-align: center; /* Adjust if needed */
+  /* color: #f8f8f2; Draculo - Foreground */
+}
+
+.skills,
+.project {
+  margin: 10px;
+}
+
+section > p,
+section > article {
+  margin: 5px 0 0;
+  /* color: #f8f8f2; Draculo - Foreground */
+}
+
+#links {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
